@@ -1,0 +1,40 @@
+## Visual Studio
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.rsuser
+
+## Build
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+*.dll
+*.exe
+*.pdb
+*.cache
+
+## NuGet
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+## Test / coverage
+[Tt]est[Rr]esult*/
+[Cc]overage*/
+*.coverage
+*.coveragexml
+
+## Logs and OS
+*.log
+Thumbs.db
+Desktop.ini
+
+## Secrets / local config
+appsettings.*.local.json
+*.pfx
+*.key
+.env
+.env.*
+!**/.env.example
