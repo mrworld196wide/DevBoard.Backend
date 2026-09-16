@@ -1,5 +1,6 @@
 ﻿using DevBoard.Application.DTOs;
 using DevBoard.Application.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevBoard.API.Controllers
@@ -15,6 +16,7 @@ namespace DevBoard.API.Controllers
             _taskService = taskService; 
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<TaskDto>> Create(CreateTaskDto dto)
         {
